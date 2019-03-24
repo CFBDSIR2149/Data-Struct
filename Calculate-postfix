@@ -41,7 +41,7 @@ int comp(char exp[])
                 expStack[++top]=result;
         }
     }
-    return expStack[0];
+    return expStack[top];
 }
 int main()
 {
