@@ -1,4 +1,8 @@
 /*计算后缀表达式的值*/
+#include <iostream>
+#include<memory>
+using namespace std;
+const int MAXSIZE=100;
 int op(int a,char oP,int b)
 {
     int result=-1;
