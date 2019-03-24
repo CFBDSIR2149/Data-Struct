@@ -1,3 +1,4 @@
+/*计算后缀表达式的值*/
 int op(int a,char oP,int b)
 {
     int result=-1;
