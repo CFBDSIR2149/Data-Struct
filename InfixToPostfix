@@ -1,4 +1,8 @@
 /*中缀表达式转后缀表达式*/
+#include <iostream>
+#include<memory>
+using namespace std;
+const int MAXSIZE=100;
 int getValue(char c)
 {
     switch(c){
