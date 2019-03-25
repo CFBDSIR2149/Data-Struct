@@ -1,0 +1,33 @@
+/*链栈：这里代码有问题*/
+void pushL(StackNode *&lst,int x)
+{
+    StackNode *p=new StackNode;
+    p->next=NULL;
+    p->data=x;
+    p->next=lst;
+    lst=p;
+}
+void popL(StackNode *&lst,int &x)
+{
+
+    StackNode *s;
+    s=lst;
+
+        x=s->data;
+        lst=s->next;
+        delete s;
+}
+int main()
+{
+    StackNode *stackList;
+    stackList=NULL;
+    int x=1;
+    for(int i=0;i<10;++i)
+    {
+        pushL(stackList,i+4);
+        cout<<(stackList++)->data<<endl;
+    }
+    popL(stackList,x);
+        cout<<x<<endl;
+    return 0;
+}
